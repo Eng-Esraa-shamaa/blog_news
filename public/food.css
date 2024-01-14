@@ -1,0 +1,12 @@
+.navbar-expand-lg .navbar-collapse {
+    flex-direction: row-reverse;
+}
+.food-img{
+    display:flex;
+    align-items:center
+}
+body {
+    overflow-x: hidden; /* Hide scrollbars */
+    background: url(images/bg.jpg) no-repeat center fixed;
+    background-size: cover;
+}

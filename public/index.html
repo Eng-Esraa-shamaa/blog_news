@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Website</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="images/favicon_io/site.webmanifest">
+    <link href="style.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body class ="bg-dark-subtle"  >
+
+
+ <!--navbar-->
+ <nav class="navbar navbar-expand-lg bg-body-tertiary bg-dark border-bottom border-body" data-bs-theme="dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">Blog</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="news.html">News</a>
+          </li> 
+          <li class="nav-item">
+            <a class="nav-link" href="technology.html">Technology</a>
+          </li> 
+          
+          <li class="nav-item">
+            <a class="nav-link" href="food.html">Food</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link  link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="business.html" onclick="fetchNews('business')">BBC News</a>
+          </li>
+        
+          <li class="nav-item">
+            <a class="nav-link  link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover " href="sports.html" aria-disabled="true" onclick="fetchNews('sports')"> Sports News</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link  link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="Health.html" aria-disabled="true" onclick="fetchNews('health')"> Health News</a>
+            </li>
+         
+        </ul>
+      </div>
+    </div>
+  </nav>
+ 
+  <div class="container">
+    <h1 class="text-center my-4" style="font-family: 'Long Cang', cursive; color: #54456b;" > Welcome to Blog Website</h1>
+  </div>
+  <div class="container" style="display: flex; justify-content: center;
+  margin-top: 2rem;">
+  <div class="row">
+    <div class="col-md-2 col-sm-12 text-center">
+      <img src="images/news-1.png" class="img-fluid img-thumbnail" style="height: 200px;
+      width: 200px;" alt="...">
+   </div>
+
+  <div class="col-md-2 col-sm-12 text-center ">
+       <img src="images/laptop-1.jpg" class="img-fluid img-thumbnail" style="height: 200px;
+       width: 200px;" alt="...">
+    </div>
+  <div class="col-md-2 col-sm-12 text-center">
+  <img src="images/sport.jpeg" class="img-fluid img-thumbnail"  style="height: 200px;
+  width: 200px;" alt="...">
+</div>
+
+
+<div class="col-md-2 col-sm-12 text-center">
+  <img src="images/chef-1.jpg" class="img-fluid img-thumbnail" style="height: 200px;
+  width: 200px;" alt="...">
+</div>
+<div class="col-md-2 col-sm-12 text-center">
+  <img src="images/technology-1.jpg" class="img-fluid img-thumbnail" style="height: 200px;
+  width: 200px;" alt="...">
+  </div>
+  <div class="col-md-2 col-sm-12 text-center">
+    <img src="images/blog-1.jpg" class="img-fluid img-thumbnail" style="height: 200px;
+    width: 200px;" alt="...">
+    </div>
+  </div>
+</div>
+
+<!------------>
+<h2 class="text-center bold my-4" style="color: #54456b; font-family: 'Long Cang', cursive;">News you won`t want to miss </h2>
+<div class="container">
+  <div class="row" id="latestposts">
+
+  </div>
+</div>
+
+
+
+
+
+
+
+    <!-----------------------latest blog posts------------------------------>
+    <div class="container my-4" >
+      <h2 class="text-center my-4" style="color: #54456b; font-family: 'Long Cang', cursive;">CHECK OUT OUR LATEST POSTS</h2>
+      <div class="row">
+        <div class="col-xl-4 col-lg-4 col-md-12  col-sm-12">
+          <div class="row">
+            <div class="col-3"></div>
+            <div class="col-md-12 col-sm-12">
+            <div class="card" style="width: 100%;">
+              <img src="images/NEWSSSSSS.png" class="card-img-top" alt="latest news">
+              <div class="card-body">
+                <h5 class="card-title">News</h5>
+                <p class="card-text">Check all latest news from here and choose type of news you are interested in. </p>
+                <a href="news.html" class="btn btn-primary">Check latest News</a>
+              </div>
+            </div>
+            </div>
+            <div class="col-3"></div>
+          </div>
+        </div>
+
+        <div class="col-xl-4 col-lg-4 col-md-12  col-sm-12">
+          <div class="row">
+            <div class="col-3 col-sm-0"></div>
+            <div class="col-lg-12 col-md-12 col-sm-12">
+            <div class="card" style="width: 100%">
+            <img src="images/Food ideas.png" class="card-img-top" alt="food ideas">
+            <div class="card-body">
+              <h5 class="card-title">Food Recipes</h5>
+              <p class="card-text">Check best recipes of different dishes and enjoy more everytime you refresh your page.</p>
+              <a href="food.html" class="btn btn-primary">Check latest food recipes</a>
+            </div>
+          </div>
+          </div>
+          <div class="col-3 col-sm-0"></div>
+          </div>
+        </div>
+
+
+        <div class="col-xl-4 col-lg-4 col-md-12  col-sm-12">
+          <div class="row">
+            <div class="col-3 col-sm-0 d-sm-none"></div>
+            <div class="col-md-12 col-sm-12">
+            <div class="card " style="width: 100%;">
+            <img src="images/technology topic.png" class="card-img-top" alt="technology ideas">
+            <div class="card-body">
+              <h5 class="card-title">Technology Topics and News</h5>
+              <p class="card-text">Check latest technology topics and news which you won`t want to miss out.</p>
+              <a href="technology.html" class="btn btn-primary">Check latest technology topics</a>
+            </div>
+          </div>
+          </div>
+          <div class="col-3 col-sm-0 d-sm-none"></div>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+
+
+
+    <!---telling about our bbc news-->
+<div class="container my-4">
+  <div class="row">
+  <h2 class="text-center my-4" style="color: #54456b; font-family: 'Long Cang', cursive;">Don't forget to Check out our BBC News</h2>
+  <img src="images/bbc news.png" alt="bbc news" class="img-fluid">
+  <div class="text-center">
+  <a href="business.html" class="btn btn-primary my-3 text-center">Check BBC News</a>
+</div>
+</div>
+</div> 
+ 
+<!-- FOOTER -->
+<div class="row">
+
+  <footer class="text-center text-lg-start" style="background-color: #fec7de;">
+    <div class="container d-flex justify-content-center py-5">
+      <button type="button" class="btn  btn-lg btn-floating mx-2" >
+        
+        <i class="fa-brands fa-facebook" style="color: blue;"></i>
+      </button>
+      <button type="button" class="btn  btn-lg btn-floating mx-2" >
+        <i class="fa-brands fa-youtube" style="color: red;"></i>
+      </button>
+      <button type="button" class="btn  btn-lg btn-floating mx-2" >
+        <i class="fa-brands fa-instagram" style="color: purple;"></i>
+      </button>
+      <button type="button" class="btn  btn-lg btn-floating mx-2">
+        <i class="fa-brands fa-x-twitter" style="color: black;"></i>
+      </button>
+    </div>
+  </footer>
+</div>
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <!-- CryptoJS (MD5 library) -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/crypto-js.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/407307c845.js" crossorigin="anonymous"></script>
+<script src="script.js"></script>
+
+</body>
+</html>

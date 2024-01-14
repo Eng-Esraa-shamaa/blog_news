@@ -1,0 +1,21 @@
+/* Updated news.css */
+body {
+  overflow-x: hidden; /* Hide scrollbars */
+}
+.navbar-expand-lg .navbar-collapse {
+  flex-direction: row-reverse;
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .card-body {
+    flex-grow: 1;
+  }
+  body {
+    overflow-x: hidden; /* Hide scrollbars */
+    background: url(images/bg.jpg) no-repeat center fixed;
+    background-size: cover;
+}
